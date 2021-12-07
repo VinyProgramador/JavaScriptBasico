@@ -1,0 +1,23 @@
+<html lang="Pt-br">
+
+<head>
+    <title>Aula onClick onLoad</title>
+    <script type="text/javascript">
+        function escrever() {
+            var nome = window.prompt('Digite seu nome');
+            var sobrenome = window.prompt('Digite seu Sobrenome');
+
+            alert("Olá "+nome+sobrenome+".");
+        }
+    </script>
+</head>
+
+<body onload="alert('Bem Vindo');">
+    <p>Alert com onclick:</p>
+    <button onclick="alert('Vinicius de Almeida')">Olá clique Aqui</button>
+    <br>
+    <p>Alert com function</p>
+    <button onclick="escrever();">Clique aqui</button>
+</body>
+
+</html>

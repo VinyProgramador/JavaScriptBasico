@@ -1,0 +1,19 @@
+<html lang="Pt-br">
+
+<head>
+    <title>Aula Dom-Javascript</title>
+    <script src="mascaras.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <h2>Cadastro</h2>
+    <p>Nome: <input type="text" placeholder="Nome"></p>
+    <p>Data de Nascimento: <input id="txtdate" type="text" placeholder="Data de Nascimento" onkeyup="mask_date();"maxlength="10"></p>
+    <p>Cep: <input id="txtcep" type="text" placeholder="Cep" onkeyup="mask_cep();" maxlength="9"></p>
+    <p>Telefone: <input id="txtfone" type="text" placeholder="Telefoone" onkeyup="mask_fone();" maxlength="14"></p>
+    <input type="button" value="Cadastrar">
+</body>
+
+</html>

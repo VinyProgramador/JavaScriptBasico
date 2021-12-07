@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <title>onMouseOver e onMouseOut</title>
+    <script>
+        function mudarfoto() {
+    document.getElementById("foto").setAttribute("src", "img/instagram.png");
+        }
+        function  mudarfoto2() {
+    document.getElementById("foto").setAttribute("src", "img/instagram.png");
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <img src="img/facebook.png" width="250" height="250" id="foto" onmouseover="mudarfoto2();" onmouseout="mudarfoto();">
+    </center>
+</body>
+
+</html>
