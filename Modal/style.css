@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,300;0,400;0,500;1,700;1,900&display=swap');
+.botao {
+    background-color: #57639e;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 8px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto';
+}
+
+.botao:hover {
+    background-color: #57639e;
+    font-family: 'Roboto';
+}
+
+.modal {
+    width: 900px;
+    height: 500px;
+    background-color: #eaeaee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    display: none;
+    animation: animate;
+    animation-duration: 900ms;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes animate {
+    from {
+        opacity: 2;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+.fechar {
+    width: 30px;
+    height: 30px;
+    background-color: #57639e;
+    border-radius: 50px;
+    float: right;
+    cursor: pointer;
+    margin-right: 1%;
+    margin-top: 0.9%;
+    color: #fff;
+    border: none;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Num Primo</title>
+   <script>
+       function primo(){
+  var num = parseInt(document.getElementById('numero').value);
+  var resposta = document.getElementById('resposta');
+  var divisores=0;
+
+  for(var count=1 ; count<=num ; count++)
+   if(num % count == 0)
+   	divisores++;
+  
+  if(divisores==2)
+  	resposta.innerHTML='É um numero primo.';
+  else
+  	resposta.innerHTML='Não é um numero primo.';
+}
+   </script>
+ </head>
+ <body>
+     <h1>Numero Primo feito em Js, me aceita cristal.</h1>
+   Número para teste: <input id="numero" type="number"  placeholder="digite o numero"/> <br />
+   <button onclick="primo()">testar</button><br />
+   Resultado: <div id="resposta">
+ </body>
+</html>
